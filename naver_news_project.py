@@ -59,7 +59,7 @@ for category in categories:
                         text_category_data["category"] = category
                         article_data = pd.DataFrame([text_category_data])
                         main_data = pd.concat([main_data, article_data])
-
+mecab = Mecab()
 final_data = pd.DataFrame([])
 for main_index in range(len(main_data)): #run through each item in main_data
     cleaned_text = ""
